@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InferenceEngine
 {
-    class ForwardChaining // C0S30019_Lecture_07_2 slide 27
+    class ForwardChaining 
     {
         private KnowledgeBase _KB;
         private string _q;
