@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InferenceEngine
 {
-    public class HornClause // note - use head and body data structure talked about in week 7 online lecture
+    public class HornClause // note - use head and body data structure
     {
         private List<string> _body;
         private string _entailedSymbol; // head
