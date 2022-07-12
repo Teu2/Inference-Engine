@@ -43,8 +43,3 @@ function PL-FC-ENTAILS?(KB,q) returns true or false
           PUSH[HEAD[c], agenda]
   return false
 ```
-
-**Backward Chaining**
-```
-
-```
