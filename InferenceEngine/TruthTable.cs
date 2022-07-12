@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InferenceEngine 
 {
-    class TruthTable // C0S30019_Lecture_07_2 slide 10 & Lecture 7 video 1
+    class TruthTable 
     {
         private KnowledgeBase _KB;
         private string _q;
@@ -152,13 +152,7 @@ namespace InferenceEngine
         {
             bool result = true;
 
-            //foreach (var c in _kb)
-            //{
-            //    result = result && PL_TRUE_APLHA(c, model);
-            //    return result;
-            //}
-
-            foreach (var c in KB.Clause) // problem, it's loop is only going through the body and not the single clauses or heads
+            foreach (var c in KB.Clause) 
             {
                 if (c.Body != null)
                 {
