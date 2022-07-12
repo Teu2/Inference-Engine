@@ -28,7 +28,20 @@ function TT-CHECK-ALL(KB,α, symbols, model) returns true or false
 
 **Forward Chaining**
 ```
-
+function PL-FC-ENTAILS?(KB,q) returns true or false
+  local variables: count, a table, indexed by a clause, initially the number of premises
+                   inferred, a table, indexed by a symbol, each entry is initially false
+                   agenda, a list of symbols, initially the symbols known to be true
+  while agenda is not empty do
+    p ← POP(agenda)
+    unless iferred[p] do
+      inferred[p] ← true
+      for each Horn clause c in whose premise p appears do
+        decrement count[c]
+        if count[c] = 0 then do
+          if Head[c] = q then return true
+          PUSH[HEAD[c], agenda]
+  return false
 ```
 
 **Backward Chaining**
