@@ -67,7 +67,6 @@ namespace InferenceEngine
                 agenda.Add(c); // adds the symbols in the knowledge base known to be true i.e ones without a body
             }
 
-            // COS30019_Lecture_07_2spp slide 27 - algorithm
             while (agenda.Count != 0) // first check the symbols we know are already true, symbols without a body
             {
                 p = agenda[0];
