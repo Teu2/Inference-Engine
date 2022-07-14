@@ -51,7 +51,6 @@ namespace InferenceEngine
             List<string> agenda = new List<string>(); // a list of symbols
             agenda.Add(_q);
 
-            // COS30019_Lecture_07_2spp slide 28 - algorithm
             while (agenda.Count != 0)
             {
                 p = agenda[0];
